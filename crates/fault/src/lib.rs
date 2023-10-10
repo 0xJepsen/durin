@@ -7,19 +7,19 @@ extern crate durin_primitives;
 #[cfg(test)]
 extern crate proptest;
 
-mod types;
+pub mod types;
 pub use types::*;
 
-mod providers;
+pub mod providers;
 
 mod state;
 pub use state::{ClaimData, FaultDisputeState};
 
-mod traits;
+pub mod traits;
 pub use traits::*;
 
-mod solver;
+pub mod solver;
 pub use solver::*;
 
-mod solvers;
+pub mod solvers;
 pub use solvers::*;
