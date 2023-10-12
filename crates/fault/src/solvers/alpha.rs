@@ -11,7 +11,7 @@ use std::{marker::PhantomData, sync::Arc};
 
 /// The alpha claim solver is the first iteration of the Fault dispute game solver used
 /// in the alpha release of the Fault proof system on Optimism.
-struct AlphaClaimSolver<T, P>
+pub struct AlphaClaimSolver<T, P>
 where
     T: AsRef<[u8]>,
     P: TraceProvider<T>,
